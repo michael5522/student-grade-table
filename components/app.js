@@ -1,15 +1,15 @@
-console.log("app.js working")
 
 class App {
-  constructor(){
+  constructor(gradeTable){
+    this.gradeTable = gradeTable;
     this.handleGetGradesError = this.handleGetGradesError.bind(this);
     this.handleGetGradesSuccess = this.handleGetGradesSuccess.bind(this);
   }
   handleGetGradesError(error){
     console.error(error);
   }
-  handleGetGradesSuccess(grade){
-    console.log(grade);
+  handleGetGradesSuccess(grades){
+    this.gradeTable.updateGrades(grades);
   }
   getGrades(){
     $.ajax({
