@@ -9,7 +9,18 @@
     integrity="sha256-pok3KZeHPJvZi4o04UfObTBGUAIkwF/zZWbh+UuKaoE=" crossorigin="anonymous" />
 </head>
 <body>
-  <h1> Student Grade Table</h1>
+  <div class ="container header">
+    <div class="row">
+      <div class="col-8">
+        <h1> Student Grade Table</h1>
+      </div>
+      <div class="col-4">
+        <h3>Average grade <span class="badge badge-secondary average-grade"></span></h3>
+      </div>
+    </div>
+
+  </div>
+
   <table class="table table-bordered ">
     <thead>
       <tr>
@@ -24,6 +35,8 @@
   </table>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"
     integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+  <script src="components/page-header.js"></script>
   <script src="components/app.js"></script>
   <script src="components/grade-table.js"></script>
   <script src="main.js"></script>
