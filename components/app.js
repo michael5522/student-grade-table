@@ -13,7 +13,7 @@ class App {
     this.gradeTable.updateGrades(grades);
     var tempGrade = 0;
     for(var i =0; i<grades.length;i++){
-      tempGrade += grades[i][`grade`];
+      tempGrade += grades[i].grade;
     }
     tempGrade /= grades.length;
     this.pageHeader.updateAverage(tempGrade);
