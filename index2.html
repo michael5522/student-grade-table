@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -21,7 +21,7 @@
       </tr>
     </thead>
     <tbody>
-      <!-- <tr>
+      <tr>
         <td>Joe</td>
         <td>Cooking</td>
         <td>55</td>
@@ -37,12 +37,115 @@
         <td>Fred</td>
         <td>Archery</td>
         <td>86</td>
-      </tr> -->
+      </tr>
 
     </tbody>
   </table>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"
     integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+  <script src="components/app.js"></script>
+  <script src="components/grade-table.js"></script>
+  <script src="main.js"></script>
+
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Grade Table</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/css/bootstrap.css"
+    integrity="sha256-pok3KZeHPJvZi4o04UfObTBGUAIkwF/zZWbh+UuKaoE=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+</head>
+
+<body>
+  <div class="container header">
+    <div class="row">
+      <div class="col-8">
+        <h1> Student Grade Table</h1>
+      </div>
+      <div class="col-4">
+        <h3>Average grade <span class="badge badge-secondary average-grade"></span></h3>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-8">
+        <table class="table table-bordered ">
+          <thead>
+            <tr>
+              <th scope="col">Student Name</th>
+              <th scope="col">Course</th>
+              <th scope="col">Grade</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="col-4">
+        <form>
+          <div class="form-group">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text"><i class="fas fa-user"></i></div>
+              </div>
+              <input type="text" class="form-control" id="student-name" name="name" placeholder="Student Name">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text"><i class="fas fa-th-list"></i></div>
+              </div>
+              <input type="text" class="form-control" id="student-course" name="course" placeholder="Student Course">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text"><i class="fas fa-graduation-cap"></i></div>
+              </div>
+              <input type="text" class="form-control" id="student-grade" name="grade" placeholder="Student Grade">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-6"></div>
+            <div class="col-3">
+              <button type="submit" class="btn btn-success">Add</button>
+            </div>
+            <div class="col-3">
+              <button type="reset" class="btn btn-danger">Cancel</button>
+            </div>
+          </div>
+
+        </form>
+
+
+
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+  <script src="components/grade-form.js"></script>
+  <script src="components/page-header.js"></script>
   <script src="components/app.js"></script>
   <script src="components/grade-table.js"></script>
   <script src="main.js"></script>

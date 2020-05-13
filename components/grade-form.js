@@ -1,4 +1,4 @@
-console.log("working");
+// console.log("working");
 
 class GradeForm {
   constructor(formElement){
@@ -11,7 +11,7 @@ class GradeForm {
   }
   handleSubmit(event){
     event.preventDefault();
-    console.log("hello from handlesubmit");
+    // console.log("hello from handlesubmit");
 
     var form = new FormData(event.target);
     var name1 = form.get("name");
@@ -19,10 +19,10 @@ class GradeForm {
     var grade1 = form.get("grade");
     this.createGrade(name1,course1,grade1);
     event.target.reset();
-    console.log(form);
-    console.log(name1);
-    console.log(course1);
-    console.log(grade1);
+    // console.log(form);
+    // console.log(name1);
+    // console.log(course1);
+    // console.log(grade1);
   }
 
 
